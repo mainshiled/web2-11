@@ -1,0 +1,24 @@
+<html>
+ <head>
+   <meta charset="utf-8">
+   <title>初めてのmBaaS</title>
+   </head>
+   <script type="text/javascript" src="nacm.min.js" charset="utf-8"></script>
+   <script>
+   
+   var ncmb = new NCMB("YOUR_APPLICATION_KEY","YOUR_CLIENT_KEY");
+   
+   
+   var testClass = new ncmb.DataStore("TestClass");
+   
+   var testClass =new TestClass();
+   TestClass.set("message","Hello, NCMB!");
+   TestClass.save()
+   .then(function(){
+   
+   })
+   .catch(function(err){
+   
+   });
+   </script>
+   </html>
